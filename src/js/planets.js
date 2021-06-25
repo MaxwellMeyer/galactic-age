@@ -14,4 +14,5 @@ export default class Planet {
     let mercExp = parseFloat((this.expec / .24).toFixed(1));
     return `You have ${(mercAge - mercExp).toFixed(1)} years left to live on Mercury`;
   }
+  venusAge() {}
   }
