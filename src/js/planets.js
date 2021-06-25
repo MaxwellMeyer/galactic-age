@@ -1,4 +1,5 @@
 export default class Planet {
+
   constructor(age) {
     this.age = age;
     this.expec = 72;
@@ -8,5 +9,9 @@ export default class Planet {
     return `You are ${mercAge} years old on Mercury!`;
   }
 
-  mercuryExp() {}
-}
+  mercuryExp() {
+    let mercAge = parseFloat((this.age / .24).toFixed(1));
+    let mercExp = parseFloat((this.expec / .24).toFixed(1));
+    return `You have ${(mercAge - mercExp).toFixed(1)} years left to live on Mercury`;
+  }
+  }

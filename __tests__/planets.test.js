@@ -14,7 +14,7 @@ describe("Planet", () => {
 
   test("should return a string giving the years a user has left to live on Mercury", () => {
     const mercury = new Planet(29);
-    expect(mercury.mercuryExp()).toEqual("You have 179.2 years left to live on Mercury!");
-    
+    expect(mercury.mercuryExp()).toEqual("You have -179.2 years left to live on Mercury");
+
   });
 });
