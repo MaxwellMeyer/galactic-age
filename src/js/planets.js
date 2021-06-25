@@ -7,4 +7,6 @@ export default class Planet {
     let mercAge = parseFloat((this.age / 0.24).toFixed(1));
     return `You are ${mercAge} years old on Mercury!`;
   }
+
+  mercuryExp() {}
 }
