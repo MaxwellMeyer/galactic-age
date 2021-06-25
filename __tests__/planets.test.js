@@ -9,6 +9,6 @@ describe("Planet", () => {
 
   test("should return a string giving the user's age on Mercury", () => {
     const mercury = new Planet(29);
-    expect(mercury.mercuryAge()).toEqual("You are 6.9 years old on Mercury!");
+    expect(mercury.mercuryAge()).toEqual("You are 120.8 years old on Mercury!");
   });
 });

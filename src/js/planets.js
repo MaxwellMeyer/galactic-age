@@ -3,5 +3,8 @@ export default class Planet {
     this.age = age;
     this.expec = 72;
   }
-  mercuryAge() {}
+  mercuryAge() {
+    let mercAge = parseFloat((this.age / 0.24).toFixed(1));
+    return `You are ${mercAge} years old on Mercury!`;
+  }
 }
