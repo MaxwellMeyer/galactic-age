@@ -3,4 +3,5 @@ export default class Planet {
     this.age = age;
     this.expec = 72;
   }
+  mercuryAge() {}
 }
