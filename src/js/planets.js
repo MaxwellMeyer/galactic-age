@@ -55,8 +55,12 @@ export default class Planet {
   }
 
   jupiterExp() {
-    
+    let jupiterAge = parseFloat((this.age / 11.86).toFixed(1));
+    let jupiterExp = parseFloat((this.expec / 11.86).toFixed(1));
+    if (jupiterAge < jupiterExp) {
+      return `You have ${(jupiterExp - jupiterAge).toFixed(1)} (Jupiter) years left to live on Jupiter!`;
+    } else {
+      return `You have exceeded your Jupiter life expectancy by ${Math.abs((jupiterExp - jupiterAge).toFixed(1))} (Jupiter) years! **Gulp!`;
+    }
   }
-
-
-  }
+}
