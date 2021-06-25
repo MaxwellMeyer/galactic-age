@@ -4,6 +4,7 @@ export default class Planet {
     this.age = age;
     this.expec = 72;
   }
+
   mercuryAge() {
     let mercuryAge = parseFloat((this.age / 0.24).toFixed(1));
     return `You are ${mercuryAge} years old on Mercury!`;
@@ -18,8 +19,11 @@ export default class Planet {
       return `You have exceeded your Mercury life expectancy by ${Math.abs((mercuryExp - mercuryAge).toFixed(1))} (Mercury) years! **Gulp!`;
     }
   }
+
   venusAge() {
     let venusAge = parseFloat((this.age / .62).toFixed(1));
     return `You are ${venusAge} years old on Venus!`;
   }
+
+  venusExp() {}
   }
