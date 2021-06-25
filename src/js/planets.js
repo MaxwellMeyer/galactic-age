@@ -49,5 +49,9 @@ export default class Planet {
     }
   }
 
+  jupiterAge() {
+    
+  }
+
 
   }

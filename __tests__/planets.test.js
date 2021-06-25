@@ -1,6 +1,7 @@
 import Planet from "../src/js/planets.js";
 
 describe("Planet", () => {
+
   test("should instantiate a planet object with 2 keys", () => {
     const planetAge = new Planet(5);
     expect(planetAge.age).toEqual(5);
@@ -39,7 +40,7 @@ describe("Planet", () => {
 
   test("should return a string giving the user's age on Mars", () => {
     const mars = new Planet(29);
-    expect(mars.marsAge()).toEqual("You are 15.4 years old on Mars!")
+    expect(mars.marsAge()).toEqual("You are 15.4 years old on Mars!");
   });
 
   test("should return a string giving the years a user has left to live on Mars", () => {
@@ -50,5 +51,10 @@ describe("Planet", () => {
   test("should return a string telling a user how many years they have exceeded their life expectancy by, in that planet's years, if that is the case.", () => {
     const marsOld = new Planet(99);
     expect(marsOld.marsExp()).toEqual("You have exceeded your Mars life expectancy by 14.4 (Mars) years! **Gulp!");
+  });
+
+  test("should return a string giving the user's age on Jupiter", () => {
+    const jupiter = new Planet(29);
+    expect(jupiter.jupiterAge()).toEqual("You are 2.4 years old on Jupiter!");
   });
 });
