@@ -57,4 +57,14 @@ describe("Planet", () => {
     const jupiter = new Planet(29);
     expect(jupiter.jupiterAge()).toEqual("You are 2.4 years old on Jupiter!");
   });
+
+  test("should return a string giving the years a user has left to live on Jupiter", () => {
+    const jupiter = new Planet(29);
+    expect(jupiter.jupiterExp()).toEqual("You have 3.7 (Jupiter) years left to live on Jupiter!");
+  });
+
+  test("should return a string telling a user how many years they have exceeded their life expectancy by, in that planet's years, if that is the case.", () => {
+    const jupiterOld = new Planet(99);
+    expect(jupiterOld.jupiterExp()).toEqual("You have exceeded your Jupiter life expectancy by 2.2 (Jupiter) years! **Gulp!");
+  });
 });

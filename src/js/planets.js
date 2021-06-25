@@ -50,6 +50,11 @@ export default class Planet {
   }
 
   jupiterAge() {
+    let jupiterAge = parseFloat((this.age / 11.86).toFixed(1));
+    return `You are ${jupiterAge} years old on Jupiter!`;
+  }
+
+  jupiterExp() {
     
   }
 
