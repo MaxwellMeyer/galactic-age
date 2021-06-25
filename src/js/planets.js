@@ -12,7 +12,11 @@ export default class Planet {
   mercuryExp() {
     let mercuryAge = parseFloat((this.age / .24).toFixed(1));
     let mercuryExp = parseFloat((this.expec / .24).toFixed(1));
-    return `You have ${(mercuryAge - mercuryExp).toFixed(1)} years left to live on Mercury`;
+    if (mercuryAge < mercuryExp) {
+      return `You have ${(mercuryExp - mercuryAge).toFixed(1)} (Mercury) years left to live on Mercury!`;
+    } else {
+      return `You have exceeded your Mercury life expectancy by ${Math.abs((mercuryExp - mercuryAge).toFixed(1))} (Mercury) years! **Gulp!`;
+    }
   }
   venusAge() {
     let venusAge = parseFloat((this.age / .62).toFixed(1));
