@@ -4,6 +4,6 @@ describe("Planet", () => {
   test("should instantiate a planet object with 2 keys", () => {
     const planetAge = new Planet(5);
     expect(planetAge.age).toEqual(5);
-    expect(planetAge.expectancy).toEqual(72);
+    expect(planetAge.expec).toEqual(72);
   });
 });
