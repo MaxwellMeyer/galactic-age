@@ -37,9 +37,17 @@ export default class Planet {
   marsAge() {
     let marsAge = parseFloat((this.age / 1.88).toFixed(1));
     return `You are ${marsAge} years old on Mars!`;
-
   }
 
+  marsExp() {
+    let marsAge = parseFloat((this.age / 1.88).toFixed(1));
+    let marsExp = parseFloat((this.expec / 1.88).toFixed(1));
+    if (marsAge < marsExp) {
+      return `You have ${(marsExp - marsAge).toFixed(1)} (Mars) years left to live on Mars!`;
+    } else {
+      return `You have exceeded your Mars life expectancy by ${Math.abs((marsExp - marsAge).toFixed(1))} (Mars) years! **Gulp!`;
+    }
+  }
 
 
   }
