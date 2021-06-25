@@ -41,4 +41,14 @@ describe("Planet", () => {
     const mars = new Planet(29);
     expect(mars.marsAge()).toEqual("You are 15.4 years old on Mars!")
   });
+
+  test("should return a string giving the years a user has left to live on Mars", () => {
+    const mars = new Planet(29);
+    expect(mars.marsExp()).toEqual("You have 22.9 (Mars) years left to live on Mars!");
+  });
+
+  test("should return a string telling a user how many years they have exceeded their life expectancy by, in that planet's years, if that is the case.", () => {
+    const marsOld = new Planet(99);
+    expect(marsOld.marsExp()).toEqual("You have exceeded your Mars life expectancy by 14.4 (Mars) years! **Gulp!");
+  });
 });
