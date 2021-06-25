@@ -25,5 +25,17 @@ export default class Planet {
     return `You are ${venusAge} years old on Venus!`;
   }
 
-  venusExp() {}
+  venusExp() {
+    let venusAge = parseFloat((this.age / .62).toFixed(1));
+    let venusExp = parseFloat((this.expec / .62).toFixed(1));
+    if (venusAge < venusExp) {
+      return `You have ${(venusExp - venusAge).toFixed(1)} (Venus) years left to live on Venus!`;
+    } else {
+      return `You have exceeded your Venus life expectancy by ${Math.abs((venusExp - venusAge).toFixed(1))} (Venus) years! **Gulp!`;
+    }
+  }
+  marsAge() {}
+
+
+
   }
