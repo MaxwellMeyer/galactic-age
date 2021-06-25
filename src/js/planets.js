@@ -5,14 +5,17 @@ export default class Planet {
     this.expec = 72;
   }
   mercuryAge() {
-    let mercAge = parseFloat((this.age / 0.24).toFixed(1));
-    return `You are ${mercAge} years old on Mercury!`;
+    let mercuryAge = parseFloat((this.age / 0.24).toFixed(1));
+    return `You are ${mercuryAge} years old on Mercury!`;
   }
 
   mercuryExp() {
-    let mercAge = parseFloat((this.age / .24).toFixed(1));
-    let mercExp = parseFloat((this.expec / .24).toFixed(1));
-    return `You have ${(mercAge - mercExp).toFixed(1)} years left to live on Mercury`;
+    let mercuryAge = parseFloat((this.age / .24).toFixed(1));
+    let mercuryExp = parseFloat((this.expec / .24).toFixed(1));
+    return `You have ${(mercuryAge - mercuryExp).toFixed(1)} years left to live on Mercury`;
   }
-  venusAge() {}
+  venusAge() {
+    let venusAge = parseFloat((this.age / .62).toFixed(1));
+    return `You are ${venusAge} years old on Venus!`;
+  }
   }
