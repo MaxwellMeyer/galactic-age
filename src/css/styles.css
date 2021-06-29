@@ -45,3 +45,24 @@ body {
 #sub:active {
   background: greenyellow;
 }
+
+#again {
+  padding: 20px 20px;
+  border: none;
+  border-radius: 50%;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  text-shadow: 2px 2px rgb(0, 17, 255);
+  color: rgb(0, 255, 213);
+  background: rgb(255, 0, 128);
+}
+
+#again:hover {
+  border: none;
+  text-shadow: 2px 2px rgb(0, 17, 255);
+  color: rgb(255, 0, 234);
+  background: rgb(1, 0, 14);
+}
+
+#again:active {
+  background: greenyellow;
+}
