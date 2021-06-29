@@ -39,5 +39,12 @@ $(document).ready(function () {
     $("#galactic").hide();
     $(".results").fadeIn();
   });
-  
+  $("#again").click(function (event) {
+    event.preventDefault();
+    $(".results").hide();
+    $("#galactic").fadeIn();
+    $("#enter").fadeIn();
+    $("#userAge").val("");
+    $("#planet").val("");
+  });
 });
