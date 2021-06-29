@@ -35,6 +35,7 @@ $(document).ready(function () {
       $(".results").text("Please enter your age/planet!!");
       break;
     }
-    $(".results").show();
+    $(".results").fadeIn();
+    $("#galactic").fadeOut();
   });
 });
