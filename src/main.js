@@ -44,7 +44,6 @@ $(document).ready(function () {
     $(".results").hide();
     $("#galactic").fadeIn();
     $("#enter").fadeIn();
-    $("#userAge").val("");
     $("#planet").val("");
   });
 });
