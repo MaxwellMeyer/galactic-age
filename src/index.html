@@ -6,5 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>galactic-age</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>GALACTIC AGE CALCULATOR</h1>
+        <p>
+          Enter your age here on earth and find out how old you are on another
+          planet!!!
+        </p>
+      </div>
+      <div class="main">
+        <div class="form-control-sm">
+          <form id="galactic">
+            <label for="userAge">Enter your age here!</label>
+            <input id="userAge" type="number" />
+            <label for="planet">Choose a planet:</label>
+            <select name="planet" id="planet" size="3">
+              <option value="mercury">Mercury</option>
+              <option value="venus">Venus</option>
+              <option value="mars">Mars</option>
+              <option value="jupiter">Jupiter</option>
+            </select>
+            <button type="submit">How old am I?!!?</button>
+          </form>
+          <div class="results">
+            <p>
+              Wow!!! <span id="spaceAge"></span>
+              <span id="thePlanet"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
